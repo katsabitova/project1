@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Регистрация</title>
+</head>
+<body>
+
+<ul>
+	<li><a href="zadanie2.html">На главную</a></li>
+	<li><a href="article.html">Статьи</a></li>
+	<li><a href="katalog.html">Каталог</a></li>
+	<li><a href="galery.html">Галерея изображений</a></li>
+	<li><em><a href="registry.html">Регистрация</a></em></li>
+	<li> <a href="contacts.html">Контакты</a></li>
+</ul>
+
+<hr>
+<h1 align="center">Регистрация</h1>
+
+<form action="action.php" target="_self" method="get">
+	<fieldset>
+		<legend>Давайте знакомиться!</legend>
+	<p>
+		<label for="secondname">Фамилия</label>
+		<input type="text" name="secondname" id="secondname" placeholder="Фамилия" required>
+	</p>
+	<p>
+		<label for="name">Имя</label>
+		<input type="text" name="name" id="name" placeholder="Имя" required>
+	</p>
+	<p>
+		<label for="name3">Отчество</label>
+		<input type="text" name="name3" id="name3" placeholder="Отчество" >
+	</p>
+	 <p>
+	 	<label for="file">Добавьте фотографию</label>
+	 	<input type="file" name="file" id="file">
+	 </p>
+	 <p>
+	 	<label for="email">Адрес электронной почты</label>
+	 	<input type="email" name="email" id="email" placeholder="Почта" required>
+	 </p>
+	<p>
+		<label for="password">Пароль</label>
+		<input type="password" min="8" placeholder="Пароль" required>
+	</p>
+	<p>
+		<label for="url">Адрес сайта</label>
+		<input type="url" name="url" id="url" value="http://">
+	</p>
+	<label for="sex">Выберите пол</label>
+	<select>
+		<option value="male">мужской</option>
+		<option value="female">женский</option>
+	</select>
+	<p>
+		<label for="date">Выберите дату рождения </label>
+		<input type="date" name="date">
+	</p>
+	<p>
+		<label for="eat">Блюда какой кухни предпочитаете?</label><br>
+		<input type="checkbox" name="rus"> Русская кухня <br>
+		<input type="checkbox" name="italy"> Итальянская кухня<br>
+		<input type="checkbox" name="japan"> Японская кухня<br>
+		<input type="checkbox" name="india"> Индийская кухня<br>
+		<input type="checkbox" name="georgia"> Грузинская кухня<br>
+	</p>
+	<label>	<textarea placeholder="О себе" name="about" cols="50" rows="30"></textarea></label>
+</fieldset>
+<br>
+	<input type="submit" value="Зарегестрироваться">
+	<input type="reset" value="Очистить">
+
+</form>
+<hr>
+<footer><p>Сабитова Екатерина&copy;</p></footer>
+	
+</body>
+</html>
