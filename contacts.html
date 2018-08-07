@@ -3,9 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Контакты</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	
+<div class="headline">	
 	<ul>
 		<li><a href="zadanie2.html">На главную</a></li>
 		<li><a href="article.html">Статьи</a></li>
@@ -14,48 +16,49 @@
 		<li><a href="registry.html">Регистрация</a></li>
 		<li> <em><a href="contacts.html">Контакты</a></em></li>
 	</ul>
+</div>
 <hr>
 <h1 align="center">Контакты</h1>
 <p>
 	<h3>Наш талефон</h3>
-	<a href="tel:+375 33 359-32-32">+375 33 359-32-32</a>
+	<a class="tel" href="tel:+375 33 359-32-32">+375 33 359-32-32</a>
 </p>
 <p>
 	<h3>Наш адрес</h3>
-	Социалистическая ул., 32
+	<div class="addres">Социалистическая ул., 32 </div>
 </p>
 <p>
 	<h3>Как добраться</h3>
-	<a href="img/map.png"><img src="img/map.png" alt="карта"></a>
+	<a class="map" href="img/map.png"><img src="img/map.png" alt="карта"></a>
 </p>
 
 <form action="action.php" target="_self" method="get">
 <fieldset>
 	<legend>Обратная связь</legend>
-	<p>
+	<div>
 		<label for="name">Имя *</label>
 		<input type="text" name="name" required>
-	</p>
-	<p>
+	</div>
+	<div>
 		<label for="tel">Телефон</label>
 		<input type="tel" name="tel" value="+375">
-	</p>
-	<p>
+	</div>
+	<div>
 		<label for="email">Email *</label>
 		<input type="email" name="email" required>
-	</p>
-	<p> 
+	</div>
+	<div> 
 		<label for="question">Задайте вопрос <br> <textarea rows="10" cols="50"></textarea></label>
-	</p>
+	</div>
 </fieldset>
 
 <br>
-<input type="submit" value="Отправить">
+<input class="button" type="submit" value="Отправить">
 </form>
 
 <hr>
 <footer>
-<p>Сабитова Екатерина&copy;</p>
+<div id="footer">Сабитова Екатерина&copy;</div>
 </footer>
 
 </body>
